@@ -13,9 +13,6 @@ body {
     font-family: GothamBold, sans-serif;
 }
 
-header {
-}
-
 .main-picture {
     background-image: url("/static/images/main-slider-01.jpg");
     background-size: cover;
@@ -24,7 +21,6 @@ header {
     @media screen and (max-width: 768px) {
         background-image: url("/static/images/4.jpeg");
         background-repeat: no-repeat;
-        background-position: 100px 5px; 
     }
 }
 
@@ -62,6 +58,24 @@ header {
     .nav-menu-main {
         @media screen and (max-width: 768px) {
             display:none;
+        }
+    }
+
+    .btn-mobile {
+        display: none;
+        width: 30px;
+
+        .btn-strip {
+            background-color: white;
+            height: 4px;
+            margin-bottom: 5px;
+            width: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            width: 30px;
         }
     }
 
