@@ -53,6 +53,10 @@ body {
             font-size: 13px;
             margin: auto 20px;
         }
+
+        li:hover {
+            color: red;
+        }
     }
 
     .nav-menu-main {
@@ -63,7 +67,6 @@ body {
 
     .btn-mobile {
         display: none;
-        width: 30px;
 
         .btn-strip {
             background-color: white;
@@ -82,11 +85,54 @@ body {
 }
 
 .header-shadow {
-    height:300px;
+    height: 200px;
     -moz-box-shadow: inset 0px 100px 100px -100px #000;
     -webkit-box-shadow: inset 0px 100px 100px -100px #000;
     -o-box-shadow: inset 0px 100px 100px -100x #000;
     box-shadow: inset 0px 130px 115px -90px #000;
+}
+
+.picture-content {
+    color: white;
+
+    .box-title-banner {
+        margin-top: 50px;   
+        line-height: 1.2;
+        text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 1px 0 #bbb, 0 2px 0 #b9b9b9, 0 1px 0 #aaa, 0 9px 1px rgba(0,0,0,.1), 0 0 4px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 35px 12px rgba(0,0,0,.2), 0 5px 5px rgba(0,0,0,.25), 0 7px 5px rgba(0,0,0,.2), 0 1px 20px rgba(0,0,0,.15);
+        color: whitesmoke;
+
+        .spn-alugue {
+            font-size: 28px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 22px;
+            }
+        }
+
+        .spn-minutos {
+            font-size: 44px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 34px;
+            }
+        }
+
+        .spn-compare {
+            font-size: 30px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 22px;
+            }
+        }
+
+        .spn-economize {
+            font-size: 48px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 38px;
+            }
+        }
+    }
 }
 
 
