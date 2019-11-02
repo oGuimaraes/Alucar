@@ -1,11 +1,15 @@
-* {
+*:not  {
     box-sizing: border-box;
-    margin: 0 auto;
 }
 
 @font-face {
     font-family: GothamBold;
     src: url("../static/fonts/Gotham\ Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: GothamMed;
+    src: url("../static/fonts/GothaProMed.otf") format("opentype");
 }
 
 body {
@@ -28,6 +32,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: inherit;
+    justify-content: space-between;
     height: 100px;
     width: 100%;
 
@@ -101,6 +106,14 @@ body {
         text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 1px 0 #bbb, 0 2px 0 #b9b9b9, 0 1px 0 #aaa, 0 9px 1px rgba(0,0,0,.1), 0 0 4px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 35px 12px rgba(0,0,0,.2), 0 5px 5px rgba(0,0,0,.25), 0 7px 5px rgba(0,0,0,.2), 0 1px 20px rgba(0,0,0,.15);
         color: whitesmoke;
 
+        @media screen and (max-height: 500px) {
+            margin-top: 0px; 
+        }
+
+        @media screen and (max-height: 500px) {
+            margin-top: 0px; 
+        }
+
         .spn-alugue {
             font-size: 28px;
 
@@ -133,6 +146,32 @@ body {
             }
         }
     }
+}
+
+.title-section {
+    align-items: center;
+    color: rgb(61, 61, 61);
+    display: flex;
+    height: 80px;
+    justify-content: center;
+
+    .strip {
+        background-color: #969696;
+        height: 1px;
+        width: 20%;
+        max-width: 250px;
+    }
+
+    .title {
+        padding: 0 30px;
+        text-align: center;
+        margin: 0 !important;
+    }
+
+}
+
+.vehicle-section {
+    height: 500px;
 }
 
 
