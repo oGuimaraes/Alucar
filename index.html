@@ -50,7 +50,7 @@
             </div>
             <div class="demo container">
                 <div class="item">
-                    <ul id="responsive" class="content-slider">
+                    <ul id="responsive" class="">
                         <li class="card">
                             <h3>UTILITARIO</h3>
                             <img class="picture-car" src="static/images/car-category/utilitario.jpg">
@@ -154,7 +154,7 @@
                 </div>
                 <div class="demo container">
                     <div class="item">
-                        <ul id="questions" class="">
+                        <ul id="responsive-question" class="content-slider">
                             <li class="card">
                                 <h3>Proteções do veículo</h3>
                                 <div class="strip"></div>
@@ -190,6 +190,26 @@
                 </div>
             </div>
         </div>
+        <div class="section-receive-offers">
+            <div class="container">
+                <span>Receba nossas ofertas!</span>
+                <div class="row">
+                    <div class="input-group input-group-sm mb-6 col-md-3 col-sm-5">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Nome Locatario" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group input-group-sm mb-6 col-md-3 col-sm-5">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1"></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Digite seu e-mail" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <button type="button" class="btn btn-light btn-sm">Cadastrar</button>
+                </div>
+            </div>
+        </div>
 
 
 </body>
@@ -201,11 +221,30 @@
 <script src="./static/js/lightslider.js"></script>
 <script>
     $(document).ready(function() {
-        $(".content-slider").lightSlider({});
-        $("#questions").lightSlider({
+        //$(".content-slider").lightSlider({});
+        $('#responsive-question').lightSlider({
+            loop: true,
+            keyPress: true,
             item: 2,
+            loop: false,
+            slideMove: 2,
+            speed: 600,
+            responsive: [{
+                breakpoint: 800,
+                settings: {
+                    item: 1,
+                    slideMove: 1,
+                    slideMargin: 6,
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    item: 1,
+                    slideMove: 1
+                }
+            }]
         });
-        $('.responsive').lightSlider({
+        $('#responsive').lightSlider({
             loop: true,
             keyPress: true,
             item: 4,
