@@ -17,13 +17,13 @@
             <div class="header-shadow">
                 <div class="container-menu container">
                     <div class="img-logo">
-                        <a class="" href=""></a>
+                        <a href="index.html"></a>
                     </div>
                     <nav class="nav-menu-main">
                         <ul class="menu-main">
-                            <li class="">OFERTAS</li>
-                            <li class=""><a href="sobre-nos.html">SOBRE NÓS</a></li>
-                            <li class="">CONTATO</li>
+                            <li><a href="#category">CATEGORIA</a></li>
+                            <li><a href="#about-us">SOBRE NÓS</a></li>
+                            <li><a href="#questions">PERGUNTAS FREQUENTES</a></li>
                         </ul>
                     </nav>
                     <div class="btn-mobile">
@@ -42,7 +42,7 @@
             </div>
         </div>
         </div>
-        <div class="container-fluid category-vehicle-section">
+        <div id="category" class="container-fluid category-vehicle-section">
             <div class="title-section">
                 <div class="strip"></div>
                 <div class="title">CATEGORIAS</div>
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-about-us">
+        <div id="about-us" class="section-about-us">
             <div class="container">
                 <div class="title-section">
                     <div class="strip"></div>
@@ -145,7 +145,7 @@
                 </div>
             </div>
         </div>
-        <div class="section-commom-questions">
+        <div id="questions" class="section-commom-questions">
             <div class="container">
                 <div class="title-section">
                     <div class="strip"></div>
@@ -226,7 +226,7 @@
             loop: true,
             keyPress: true,
             item: 2,
-            loop: false,
+            loop: true,
             slideMove: 2,
             speed: 600,
             responsive: [{
@@ -248,7 +248,7 @@
             loop: true,
             keyPress: true,
             item: 4,
-            loop: false,
+            loop: true,
             slideMove: 2,
             speed: 600,
             responsive: [{
@@ -266,5 +266,10 @@
                 }
             }]
         });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="popover"]').popover();
     });
 </script>

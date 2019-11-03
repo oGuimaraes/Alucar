@@ -120,7 +120,7 @@
     background-color: #39a900;
 }
 
-.lSSlideOuter:nth-child(1) .lSPager.lSpg>li:hover a,
+.lSSlideOuter:nth-child .lSPager.lSpg>li:hover a,
 .lSSlideOuter .lSPager.lSpg>li.active a {
     background-color: #ff6a00;
 }
